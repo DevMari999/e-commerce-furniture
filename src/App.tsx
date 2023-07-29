@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import ProductDetails from "./components/ProductDetails/ProductDetails";
 import ShoppingCartPage from "./components/ShoppingCartPage/ShoppingCartPage";
 import CheckoutPage from "./components/CheckoutPage/CheckoutPage";
 import "./App.css";
+import MainPage from "./components/MainPage/MainPage";
+import AllChairs from "./components/AllChairs/AllChairs";
+import Footer from "./components/Footer/Footer";
+import AllSofas from "./components/AllSofas/AllSofas";
 
 const App: React.FC = () => {
     return (
@@ -13,11 +15,13 @@ const App: React.FC = () => {
             <div>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/product/:productId" element={<ProductDetails />} />
+                    <Route path="/" element={<MainPage />} />
                     <Route path="/cart" element={<ShoppingCartPage />} />
                     <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/all-chairs" element={<AllChairs />} />
+                    <Route path="/all-sofas" element={<AllSofas />} />
                 </Routes>
+                <Footer/>
             </div>
         </Router>
     );

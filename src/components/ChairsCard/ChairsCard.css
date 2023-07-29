@@ -1,0 +1,31 @@
+.main-productcard {
+ width:100%
+}
+.all-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.product-card {
+    margin: 10px;
+    background: rgba(232, 232, 234, 0.36);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px #e0dfdf;
+    flex: 0 0 calc(30% - 10px);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img{
+    height: 270px;
+}

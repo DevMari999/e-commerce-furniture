@@ -1,0 +1,34 @@
+.footer-main {
+  height: 300px;
+  box-shadow: 0 0 5px #e0dfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.get-in-touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  padding: 30px;
+}
+
+.get-in-touch h2 {
+  margin-bottom: 20px;
+}
+.footer {
+  background: rgba(232, 232, 234, 0.36);
+  box-shadow: 0 0 5px #e0dfdf;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+
+}
+
+.sm-logo img {
+  height: 30px;
+  margin: 10px;
+}

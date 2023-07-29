@@ -13,7 +13,11 @@ const Header: React.FC = () => {
                     </div>
                     <div className="divider"></div>
                     <div className="main-nav-item">
-                        <Link to="/checkout">Shop All</Link>
+                        <Link to="/all-chairs">Chairs</Link>
+                    </div>
+                    <div className="divider"></div>
+                    <div className="main-nav-item">
+                        <Link to="/all-sofas">Sofas</Link>
                     </div>
                     <div className="divider"></div>
                     <div className="main-nav-item">

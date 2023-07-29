@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
+import { ChairsProvider } from './context/ChairsContext';
 
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-
-    <App />
-
+ReactDOM.render(
+    <React.StrictMode>
+        <ChairsProvider>
+            <App />
+        </ChairsProvider>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 

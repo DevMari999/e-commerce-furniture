@@ -1,0 +1,57 @@
+.new-arrival-container {
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-arrivals-header {
+  font-size: 20px;
+margin-bottom: 15px;
+}
+
+.shop-sofas-container {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.shop-chairs-container {
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 150px;
+}
+
+.shop-sofas:hover {
+    transform: scale(1.02);
+}
+
+.shop-chairs:hover {
+    transform: scale(1.02);
+}
+
+.shop-chairs, .shop-sofas {
+    padding: 30px;
+    margin: 10px 10px 20px;
+    background: rgba(232, 232, 234, 0.36);
+    box-shadow: 0 0 5px #e0dfdf;
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.shop-chairs h1, .shop-sofas h1{
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.shop-sofas img, .shop-chairs img{
+    height: 270px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

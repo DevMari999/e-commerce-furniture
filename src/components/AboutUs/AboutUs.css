@@ -1,0 +1,35 @@
+.about-us-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 5px #e0dfdf;
+    background: rgba(232, 232, 234, 0.36);
+}
+.about-us-main {
+    padding-bottom: 70px;
+}
+
+.about-us-image img {
+  height:420px;
+}
+
+.our-story {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.our-story h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.our-story p{
+    font-size: 20px;
+    color: #282a2d;
+    text-align: justify;
+    text-indent: 20px;
+}
