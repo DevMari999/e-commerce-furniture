@@ -16,6 +16,8 @@ import chair9 from "../assets/9.png";
             image: chair1,
             price: 700,
             year: 2019,
+            sale: false,
+            color:"grey",
             description: "Embrace a sense of calm and relaxation with the SerenityLounge chair. Its plush cushioning and ergonomic design offer optimal comfort for unwinding after a long day.",
         },
         {
@@ -24,6 +26,8 @@ import chair9 from "../assets/9.png";
             image: chair2,
             price: 750,
             year: 2023,
+            sale: false,
+            color:"blue",
             description: " Indulge in the lap of luxury with the LuxeComfort chair. Its exquisite materials and stylish craftsmanship create a statement piece that complements any interior."
         },
         {
@@ -32,6 +36,8 @@ import chair9 from "../assets/9.png";
             image: chair3,
             price: 600,
             year: 2023,
+            sale: false,
+            color:"green",
             description: "Discover the perfect balance of style and support with the HarmonyHaven chair. Its contemporary design and sturdy construction make it a versatile addition to any living space."
         },
         {
@@ -40,6 +46,8 @@ import chair9 from "../assets/9.png";
             image: chair4,
             price: 800,
             year: 2023,
+            sale: false,
+            color:"purple",
             description: "Elevate your seating experience with the ZenithErgo chair. Engineered for ergonomic support, it promotes better posture and offers exceptional comfort during long hours of use."
         },
         {
@@ -48,6 +56,8 @@ import chair9 from "../assets/9.png";
             image: chair5,
             price: 700,
             year: 2018,
+            sale: false,
+            color:"black",
             description: "Embrace sustainability without compromising style with the EcoSculpt chair. Crafted from eco-friendly materials, it showcases a sculptural design that adds a touch of elegance to any room."
         },
         {
@@ -56,7 +66,9 @@ import chair9 from "../assets/9.png";
             image: chair6,
             price: 720,
             year: 2021,
-            description: "Immerse yourself in a cloud of coziness with the CloudCocoon™ chair. Its enveloping design and soft upholstery create a cocoon-like feel, inviting you to unwind and relax."
+            sale: false,
+            color:"blue",
+            description: "Immerse yourself in a cloud of coziness with the CloudCocoon chair. Its enveloping design and soft upholstery create a cocoon-like feel, inviting you to unwind and relax."
         },
         {
             id: 7,
@@ -64,6 +76,8 @@ import chair9 from "../assets/9.png";
             image: chair7,
             price: 850,
             year: 2019,
+            sale: false,
+            color:"grey",
             description: "Create a serene retreat with the TranquilVista chair. Its soothing aesthetics and gentle contours provide a serene ambiance for moments of tranquility."
         },
         {
@@ -72,6 +86,8 @@ import chair9 from "../assets/9.png";
             image: chair8,
             price: 700,
             year: 2022,
+            sale: false,
+            color:"peach",
             description: "Infuse urban sophistication into your space with the UrbanAura chair. Its sleek lines and modern appeal bring a touch of cosmopolitan charm to any setting."
         },
         {
@@ -80,6 +96,8 @@ import chair9 from "../assets/9.png";
             image: chair9,
             price: 730,
             year: 2020,
+            sale: false,
+            color:"beige",
             description: "Reach for the stars of comfort with the StellarRecline chair. Designed for supreme relaxation, its adjustable features allow you to find the perfect position to unwind."
         }
     ]

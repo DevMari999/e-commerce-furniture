@@ -1,0 +1,21 @@
+.all-products-main {
+    padding: 100px 10px;
+    min-height:calc(100vh - 370px);
+}
+
+.color-filter button img {
+    height: 15px;
+
+}
+
+.color-filter button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.show-all {
+    margin-right: 50px ;
+}

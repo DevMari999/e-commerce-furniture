@@ -1,6 +1,13 @@
-.new-arrival-container {
+.new-arrivals-main {
     margin-top: 50px;
     padding-top: 100px;
+    padding-bottom: 100px;
+}
+.shop-link {
+    text-decoration: none;
+    color: #282a2d;
+}
+.new-arrival-container {
     margin-bottom: 70px;
     display: flex;
     justify-content: space-evenly;
@@ -21,7 +28,7 @@ margin-bottom: 15px;
 .shop-chairs-container {
     padding-right: 100px;
     padding-left: 100px;
-    margin-bottom: 150px;
+
 }
 
 .shop-sofas:hover {
@@ -54,4 +61,8 @@ margin-bottom: 15px;
     height: 270px;
     margin-left: 50px;
     margin-right: 50px;
+}
+.on-sale-header {
+    color: rgba(233, 12, 12, 0.9);
+    font-size: 25px;
 }

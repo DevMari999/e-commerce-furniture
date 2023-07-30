@@ -6,6 +6,8 @@ export interface Chair {
     price: number;
     year: number;
     description: string;
+    sale: boolean;
+    color: string;
 }
 
 export interface Sofa {
@@ -15,4 +17,6 @@ export interface Sofa {
     price: number;
     year: number;
     description: string;
+    sale: boolean;
+    color: string;
 }

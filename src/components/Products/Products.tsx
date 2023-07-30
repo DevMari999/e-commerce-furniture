@@ -1,15 +1,20 @@
 import React from 'react';
 import { useChairsContext } from '../../context/ChairsContext'; // Import the context hook
-import ChairsCard from '../ChairsCard/ChairsCard';
+import ProductCard from '../ProductCard/ProductCard';
 import './Products.css';
-import shopsofa from '../../assets/sofa3.png'
+import shopsofa from '../../assets/3sofa.png'
 import shopchairs from '../../assets/7.png'
+import {useSofasContext} from "../../context/SofasContext";
+import {Link} from "react-router-dom";
 
 const Products: React.FC = () => {
     const { chairs } = useChairsContext();
+    const { sofas } = useSofasContext();
 
+    const combinedData = [...chairs, ...sofas];
 
-    const newArrivalChairs = chairs.filter((chair) => chair.year === 2023);
+    const newArrivalChairs = combinedData.filter((chair) => chair.year === 2023);
+    const onSale = combinedData.filter((chair) => chair.sale === true);
 
     return (
         <div className="new-arrivals-main" id="new-arrivals">
@@ -17,19 +22,29 @@ const Products: React.FC = () => {
                 <div className="new-arrivals-header">
                     <h2>New Arrivals - 2023</h2>
                 </div >
-                <ChairsCard chairs={newArrivalChairs} />
+                <ProductCard items={newArrivalChairs} />
             </div>
+            <Link to="/all-sofas" className="shop-link">
             <div className="shop-sofas-container">
                 <div className="shop-sofas">
                     <img src={shopsofa}/>
                     <h1>SHOP ALL SOFAS</h1>
                 </div>
             </div>
+            </Link>
+            <Link to="/all-chairs" className="shop-link">
             <div className="shop-chairs-container">
                <div className="shop-chairs">
                    <h1>SHOP ALL CHAIRS</h1>
                    <img src={shopchairs}/>
                </div>
+            </div>
+            </Link>
+            <div className="new-arrival-container">
+                <div className="new-arrivals-header">
+                    <h2 className="on-sale-header">ON SALE!</h2>
+                </div >
+                <ProductCard items={onSale} />
             </div>
         </div>
     );

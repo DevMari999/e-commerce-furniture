@@ -12,7 +12,8 @@
 .product-card {
     margin: 10px;
     background: rgba(232, 232, 234, 0.36);
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +21,15 @@
     box-shadow: 0 0 5px #e0dfdf;
     flex: 0 0 calc(30% - 10px);
     transition: transform 0.2s ease;
+    position: relative;
+}
+.card-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.card-logo img {
+    height: 30px !important;
 }
 
 .product-card:hover {
