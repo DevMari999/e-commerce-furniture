@@ -15,7 +15,7 @@ import sofa12 from "../assets/sofa12.png";
 
 const sofas = [
     {
-        id: 1,
+        id: 13,
         name: "LuxeLounger",
         image: sofa1,
         price: 1300,
@@ -27,7 +27,7 @@ const sofas = [
         description: " Sink into comfort with our LuxeLounger sofa, featuring plush cushions and a sleek design that adds a touch of luxury to any living space.",
     },
     {
-        id: 2,
+        id: 14,
         name: "CozyHaven",
         image: sofa2,
         price: 1450,
@@ -39,7 +39,7 @@ const sofas = [
         description: "Experience the ultimate coziness with our CozyHaven sofa, designed with soft, fluffy cushions that make it the perfect spot for relaxation and unwinding."
     },
     {
-        id: 3,
+        id: 15,
         name: "Modern Chic",
         image: sofa3,
         price: 1200,
@@ -51,7 +51,7 @@ const sofas = [
         description: "Elevate your decor with our ModernChic sofa, boasting clean lines and contemporary elegance that brings a stylish edge to your home."
     },
     {
-        id: 4,
+        id: 16,
         name: "ClassicComfort",
         image: sofa4,
         price: 1800,
@@ -63,7 +63,7 @@ const sofas = [
         description: "Embrace timeless comfort with our ClassicComfort sofa, crafted with traditional design and supportive cushions for a truly inviting feel."
     },
     {
-        id: 5,
+        id: 17,
         name: "UrbanRetreat",
         image: sofa5,
         price: 1700,
@@ -75,7 +75,7 @@ const sofas = [
         description: "Transform your living room into an urban retreat with our UrbanRetreat sofa, blending modern aesthetics and functionality for urban living."
     },
     {
-        id: 6,
+        id: 18,
         name: "Nature'sEmbrace",
         image: sofa6,
         price: 1720,
@@ -87,7 +87,7 @@ const sofas = [
         description: "Connect with nature with our Nature'sEmbrace sofa, made from eco-friendly materials and featuring earthy tones to bring the outdoors in."
     },
     {
-        id: 7,
+        id: 19,
         name: "ClassicElegance",
         image: sofa7,
         price: 1850,
@@ -100,7 +100,7 @@ const sofas = [
             "Add a touch of classic elegance to your living space with our ClassicElegance sofa, featuring timeless design and premium comfort.",
     },
     {
-        id: 8,
+        id: 20,
         name: "CozyComfort",
         image: sofa8,
         price: 1520,
@@ -113,7 +113,7 @@ const sofas = [
             "Experience ultimate coziness with our CozyComfort sofa, designed for maximum comfort and relaxation.",
     },
     {
-        id: 9,
+        id: 21,
         name: "SleekModern",
         image: sofa9,
         price: 1950,
@@ -126,7 +126,7 @@ const sofas = [
             "Embrace modernity with our SleekModern sofa, featuring clean lines and minimalist design for a contemporary look.",
     },
     {
-        id: 10,
+        id: 22,
         name: "RusticCharm",
         image: sofa10,
         price: 1680,
@@ -139,7 +139,7 @@ const sofas = [
             "Bring rustic charm to your home with our RusticCharm sofa, crafted from natural materials and warm tones.",
     },
     {
-        id: 11,
+        id: 23,
         name: "ElegantLounge",
         image: sofa11,
         price: 1850,
@@ -152,7 +152,7 @@ const sofas = [
             "Indulge in elegance with the ElegantLounge sofa, featuring plush cushions and a refined design for sophisticated lounging.",
     },
     {
-        id: 12,
+        id: 24,
         name: "ModernComfort",
         image: sofa12,
         price: 2200,

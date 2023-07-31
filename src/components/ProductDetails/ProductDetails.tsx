@@ -28,7 +28,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, onClose }) => 
                         Close X
                     </button>
                 </div>
-                <div  className={`product-details-content ${product.type === 'sofa' ? 'sofa2' : 'chair2'}`}>
+                <div  className={`product-details-content ${product.type === 'sofa' ? 'sofa' : 'chair'}`}>
                     <img src={`${product.image}`} alt={product.name} />
                     <div className="product-description">
                         <h3>{product.name}</h3>
