@@ -11,9 +11,7 @@
 }
 .product-card {
     margin: 10px;
-    background: rgba(232, 232, 234, 0.36);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background: rgba(241, 241, 242, 0.31);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +20,7 @@
     flex: 0 0 calc(30% - 10px);
     transition: transform 0.2s ease;
     position: relative;
+    padding: 20px;
 }
 .card-logo {
     position: absolute;
@@ -36,6 +35,10 @@
     transform: scale(1.05);
 }
 
-.product-card img{
+.chair img{
     height: 270px;
+}
+
+.sofa img {
+    height: 250px;
 }

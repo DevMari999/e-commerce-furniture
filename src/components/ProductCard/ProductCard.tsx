@@ -26,18 +26,24 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
         <div className="main-productcard">
             <div className="all-cards">
                 {items.map((item) => (
-                    <div key={item.id} className="product-card" onClick={() => handleProductClick(item)}>
-                        <img src={`${item.image}`} alt={item.name} />
+                    <div
+                        key={item.id}
+                        className={`product-card ${item.type === 'sofa' ? 'sofa' : 'chair'}`}
+                        onClick={() => handleProductClick(item)}
+                    >
+                        <img src={item.image} alt={item.name} />
                         <h3>{item.name}</h3>
                         <span>Price: ${item.price}</span>
-                        {item.year >= 2023 &&
+                        {item.year >= 2023 && (
                             <div className="card-logo">
                                 <img src={newlogo} alt="New" />
-                            </div>}
-                        {item.sale === true &&
+                            </div>
+                        )}
+                        {item.sale && (
                             <div className="card-logo">
                                 <img src={salelogo} alt="Sale" />
-                            </div>}
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>

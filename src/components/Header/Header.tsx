@@ -28,7 +28,6 @@ const Header: React.FC = () => {
                     <div className="divider"></div>
                     <div className="main-nav-item">
                         <Link to="/cart">
-                            Cart
                             <img className="cart-logo" src={cart}/>
                             {totalItemsInCart > 0 && <span className="cart-item-count">{totalItemsInCart}</span>}
                         </Link>

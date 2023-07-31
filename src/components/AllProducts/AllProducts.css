@@ -1,6 +1,6 @@
 .all-products-main {
     padding: 100px 10px;
-    min-height:calc(100vh - 370px);
+    min-height:calc(100vh - 360px);
 }
 
 .color-filter button img {

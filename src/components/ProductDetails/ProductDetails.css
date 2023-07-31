@@ -30,9 +30,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+
 }
 .product-details img {
-    max-width: 500px;
+    max-height: 300px;
+
 }
 
 .product-details h3 {
@@ -48,10 +50,11 @@
     margin-top: 20px;
     padding: 30px;
     display: flex;
-
+    margin-left: 50px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    position: relative;
 }
 
 .product-description h3 {

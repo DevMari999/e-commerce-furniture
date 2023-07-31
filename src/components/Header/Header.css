@@ -2,14 +2,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 60px;
     z-index: 100;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'EB Garamond', serif;
-    font-weight: bold;
     box-shadow: 0 0 5px #e0dfdf;
 
 }
@@ -54,6 +52,5 @@
 
 .cart-logo {
     height: 25px;
-    margin-left: 7px;
     margin-right: 7px;
 }

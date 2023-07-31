@@ -20,9 +20,10 @@ const sofas = [
         image: sofa1,
         price: 1300,
         year: 2019,
-        sale: true,
+        sale: false,
         color:"grey",
         quantity: 0,
+        type: 'sofa',
         description: " Sink into comfort with our LuxeLounger sofa, featuring plush cushions and a sleek design that adds a touch of luxury to any living space.",
     },
     {
@@ -34,6 +35,7 @@ const sofas = [
         sale: false,
         color:"beige",
         quantity: 0,
+        type: 'sofa',
         description: "Experience the ultimate coziness with our CozyHaven sofa, designed with soft, fluffy cushions that make it the perfect spot for relaxation and unwinding."
     },
     {
@@ -45,6 +47,7 @@ const sofas = [
         sale: true,
         color:"blue",
         quantity: 0,
+        type: 'sofa',
         description: "Elevate your decor with our ModernChic sofa, boasting clean lines and contemporary elegance that brings a stylish edge to your home."
     },
     {
@@ -56,6 +59,7 @@ const sofas = [
         sale: false,
         color:"pink",
         quantity: 0,
+        type: 'sofa',
         description: "Embrace timeless comfort with our ClassicComfort sofa, crafted with traditional design and supportive cushions for a truly inviting feel."
     },
     {
@@ -67,6 +71,7 @@ const sofas = [
         sale: false,
         color:"green",
         quantity: 0,
+        type: 'sofa',
         description: "Transform your living room into an urban retreat with our UrbanRetreat sofa, blending modern aesthetics and functionality for urban living."
     },
     {
@@ -78,6 +83,7 @@ const sofas = [
         sale: false,
         color:"peach",
         quantity: 0,
+        type: 'sofa',
         description: "Connect with nature with our Nature'sEmbrace sofa, made from eco-friendly materials and featuring earthy tones to bring the outdoors in."
     },
     {
@@ -86,9 +92,10 @@ const sofas = [
         image: sofa7,
         price: 1850,
         year: 2019,
-        sale: false,
+        sale: true,
         color: "grey",
         quantity: 0,
+        type: 'sofa',
         description:
             "Add a touch of classic elegance to your living space with our ClassicElegance sofa, featuring timeless design and premium comfort.",
     },
@@ -101,6 +108,7 @@ const sofas = [
         sale: false,
         color: "peach",
         quantity: 0,
+        type: 'sofa',
         description:
             "Experience ultimate coziness with our CozyComfort sofa, designed for maximum comfort and relaxation.",
     },
@@ -113,6 +121,7 @@ const sofas = [
         sale: false,
         color: "blue",
         quantity: 0,
+        type: 'sofa',
         description:
             "Embrace modernity with our SleekModern sofa, featuring clean lines and minimalist design for a contemporary look.",
     },
@@ -125,6 +134,7 @@ const sofas = [
         sale: false,
         color: "beige",
         quantity: 0,
+        type: 'sofa',
         description:
             "Bring rustic charm to your home with our RusticCharm sofa, crafted from natural materials and warm tones.",
     },
@@ -137,6 +147,7 @@ const sofas = [
         sale: false,
         color: "black",
         quantity: 0,
+        type: 'sofa',
         description:
             "Indulge in elegance with the ElegantLounge sofa, featuring plush cushions and a refined design for sophisticated lounging.",
     },
@@ -149,6 +160,7 @@ const sofas = [
         sale: false,
         color: "purple",
         quantity: 0,
+        type: 'sofa',
         description:
             "Experience modern comfort with the ModernComfort sofa, combining clean lines and luxurious materials for a contemporary touch.",
     },

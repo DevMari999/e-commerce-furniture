@@ -9,6 +9,7 @@ export interface Chair {
     sale: boolean;
     color: string;
     quantity: number;
+    type: string;
 }
 
 export interface Sofa {
@@ -21,4 +22,5 @@ export interface Sofa {
     sale: boolean;
     color: string;
     quantity: number;
+    type: string;
 }

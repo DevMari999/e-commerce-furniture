@@ -3,7 +3,7 @@ import { useChairsContext } from '../../context/ChairsContext'; // Import the co
 import ProductCard from '../ProductCard/ProductCard';
 import './Products.css';
 import shopsofa from '../../assets/9sofa.png'
-import shopchairs from '../../assets/11.png'
+import shopchairs from '../../assets/6.png'
 import {useSofasContext} from "../../context/SofasContext";
 import {Link} from "react-router-dom";
 
