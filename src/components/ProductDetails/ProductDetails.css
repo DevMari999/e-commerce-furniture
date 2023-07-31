@@ -16,7 +16,7 @@
     background: #f8f7f7;
     box-shadow: 0 0 5px #dbd8d8;
     padding: 30px;
-    width: 90%;
+    width: 70%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -50,6 +50,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
+    width: 350px;
 }
 
 .product-description h3 {
@@ -128,7 +129,5 @@
         width: 50%;
         height: 50vh;
     }
-    .product-description {
-        width: 350px;
-    }
+
 }

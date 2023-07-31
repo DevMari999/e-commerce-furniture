@@ -20,6 +20,7 @@
     transition: transform 0.2s ease;
     position: relative;
     padding: 20px;
+    flex-basis: calc(30% - 10px);
 }
 .card-logo {
     position: absolute;
@@ -35,12 +36,12 @@
 }
 
 .chair img{
-   height: 33vh;
+    height: 35vh;
     width: auto;
 }
 
 .sofa img {
-   height: 30vh;
+   height: 33vh;
     width: auto;
 }
 
