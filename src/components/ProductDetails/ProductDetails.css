@@ -16,10 +16,12 @@
     background: #f8f7f7;
     box-shadow: 0 0 5px #dbd8d8;
     padding: 30px;
-    width: 70%;
+    min-width: fit-content;
     height: 70vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -71,6 +73,7 @@
 .close-button {
     display: flex;
     justify-content: flex-end;
+    margin-left: 90%;
 }
 .close-button button {
     background: none;

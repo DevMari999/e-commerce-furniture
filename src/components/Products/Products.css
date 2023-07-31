@@ -99,4 +99,10 @@
     .new-arrivals-main {
         padding:200px 500px;
     }
+    .shop-chairs, .shop-sofas {
+        height: 30vh;
+    }
+    .shop-sofas img, .shop-chairs img{
+        height: 90%;
+    }
 }

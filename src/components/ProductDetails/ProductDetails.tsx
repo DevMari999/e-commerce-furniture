@@ -25,7 +25,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, onClose }) => 
             <div className="button-div">
                 <div className="close-button">
                     <button onClick={onClose}>
-                        Close X
+                        Close
                     </button>
                 </div>
                 <div  className={`product-details-content ${product.type === 'sofa' ? 'sofa' : 'chair'}`}>
