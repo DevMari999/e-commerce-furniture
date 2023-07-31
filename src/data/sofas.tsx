@@ -156,7 +156,7 @@ const sofas = [
         name: "ModernComfort",
         image: sofa12,
         price: 2200,
-        year: 2022,
+        year: 2021,
         sale: false,
         color: "purple",
         quantity: 0,
