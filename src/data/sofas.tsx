@@ -1,15 +1,15 @@
-import sofa1 from "../assets/1sofa.png";
-import sofa2 from "../assets/2sofa.png";
-import sofa3 from "../assets/3sofa.png";
-import sofa4 from "../assets/4sofa.png";
-import sofa5 from "../assets/5sofa.png";
-import sofa6 from "../assets/6sofa.png";
-import sofa7 from "../assets/7sofa.png";
-import sofa8 from "../assets/8sofa.png";
-import sofa9 from "../assets/9sofa.png";
-import sofa10 from "../assets/10sofa.png";
-import sofa11 from "../assets/11sofa.png";
-import sofa12 from "../assets/12sofa.png";
+import sofa1 from "../assets/sofa1.png";
+import sofa2 from "../assets/sofa2.png";
+import sofa3 from "../assets/sofa3.png";
+import sofa4 from "../assets/sofa4.png";
+import sofa5 from "../assets/sofa5.png";
+import sofa6 from "../assets/sofa6.png";
+import sofa7 from "../assets/sofa7.png";
+import sofa8 from "../assets/sofa8.png";
+import sofa9 from "../assets/sofa9.png";
+import sofa10 from "../assets/sofa10.png";
+import sofa11 from "../assets/sofa11.png";
+import sofa12 from "../assets/sofa12.png";
 
 
 

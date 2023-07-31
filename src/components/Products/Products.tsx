@@ -2,7 +2,7 @@ import React from 'react';
 import { useChairsContext } from '../../context/ChairsContext'; // Import the context hook
 import ProductCard from '../ProductCard/ProductCard';
 import './Products.css';
-import shopsofa from '../../assets/9sofa.png'
+import shopsofa from '../../assets/sofa9.png'
 import shopchairs from '../../assets/6.png'
 import {useSofasContext} from "../../context/SofasContext";
 import {Link} from "react-router-dom";
