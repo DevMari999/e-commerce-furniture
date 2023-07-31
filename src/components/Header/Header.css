@@ -54,3 +54,13 @@
     height: 25px;
     margin-right: 7px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+
+    .divider {
+        margin: 3px;
+    }
+}

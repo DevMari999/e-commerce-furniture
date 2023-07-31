@@ -71,3 +71,20 @@
 .arrow img {
     height: 40px;
 }
+
+@media (max-width: 768px) {
+
+    .background-home img {
+        object-fit: cover;
+    }
+    .header-home h1 {
+        font-size:27px;
+    }
+    .header-home h2 {
+        font-size:23px;
+    }
+
+    .main-home {
+        height: 50vh;
+    }
+}

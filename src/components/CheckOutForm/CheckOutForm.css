@@ -1,0 +1,33 @@
+.checkout {
+    height: calc(100vh - 360px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 15px;
+    font-size: 18px;
+
+}
+
+.input-field input {
+    width: 50vh;
+    border-radius: 5px;
+    border: solid #d1d1d2 1px;
+    height: 30px;
+    background: rgba(232, 232, 234, 0.36);
+    font-size: 16px;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

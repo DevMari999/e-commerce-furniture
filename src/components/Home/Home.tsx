@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="main-home">
             <div className="background-home">
-                <img src={background}/>
+                <img src={background} alt="background"/>
             </div>
             <div className="header-home">
                 <h1>FURNITURE WORLD</h1>
@@ -20,6 +20,7 @@ const Home = () => {
                     </button>
                 </a>
             </div>
+
 
         </div>
     );

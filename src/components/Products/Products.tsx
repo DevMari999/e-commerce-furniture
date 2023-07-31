@@ -14,7 +14,7 @@ const Products: React.FC = () => {
     const combinedData = [...chairs, ...sofas];
 
     const newArrivalChairs = combinedData.filter((chair) => chair.year === 2023);
-    const onSale = combinedData.filter((chair) => chair.sale === true);
+    const onSale = combinedData.filter((chair) => chair.sale);
 
     return (
         <div className="new-arrivals-main" id="new-arrivals">
@@ -28,14 +28,14 @@ const Products: React.FC = () => {
             <div className="shop-sofas-container">
                 <div className="shop-sofas">
                     <h1>SHOP ALL SOFAS</h1>
-                    <img src={shopsofa}/>
+                    <img src={shopsofa} alt="sofa"/>
                 </div>
             </div>
             </Link>
             <Link to="/all-chairs" className="shop-link">
             <div className="shop-chairs-container">
                <div className="shop-chairs">
-                   <img src={shopchairs}/>
+                   <img src={shopchairs} alt="chair"/>
                    <h1>SHOP ALL CHAIRS</h1>
                </div>
             </div>

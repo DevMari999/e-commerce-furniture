@@ -25,7 +25,7 @@
     flex-direction: column;
 }
 
-.cart-button {
+.cart-button, .quantity-button {
     font-size: 16px;
     padding: 3px 7px;
     border-radius: 5px;
@@ -36,11 +36,22 @@
 
 }
 
-.cart-button:hover {
+.cart-button:hover, .quantity-button:hover {
    box-shadow: 0 0 5px #cecccc;
 }
-.quantity-button {
-    padding: 3px;
-    font-size: 16px;
-    margin: 5px;
+
+@media (max-width: 768px) {
+   .cart {
+       padding: 10px;
+   }
+    .all-cart-items {
+        margin: 0;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .cart {
+        padding:200px 500px;
+    }
 }

@@ -30,3 +30,15 @@
 .show-all {
     margin-right: 50px ;
 }
+
+@media (max-width: 768px) {
+    .all-products-main {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .all-products-main {
+        padding: 200px 500px;
+    }
+}

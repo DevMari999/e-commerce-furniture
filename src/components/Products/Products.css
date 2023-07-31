@@ -9,15 +9,14 @@
 }
 .new-arrival-container {
     margin-bottom: 70px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
 }
 
 .new-arrivals-header {
-  font-size: 20px;
-margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shop-sofas:hover {
@@ -38,6 +37,7 @@ margin-bottom: 15px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    height: 42vh;
 }
 
 .shop-chairs h1, .shop-sofas h1{
@@ -47,7 +47,56 @@ margin-bottom: 15px;
 }
 
 .shop-sofas img, .shop-chairs img{
-    height: 30vh;
+    height: 95%;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+
+   .new-arrivals-main {
+       padding:100px 10px;
+
+   }
+    .shop-chairs, .shop-sofas {
+        flex-direction: column;
+    }
+    .shop-sofas img {
+      width: 90%;
+        height: auto;
+    }
+
+    .shop-chairs img {
+      height: 75%;
+    }
+    .shop-chairs h1, .shop-sofas h1{
+        margin: 0;
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px)  and (max-width: 1279px){
+    .new-arrivals-main {
+        padding:100px 10px;
+    }
+
+    .shop-sofas img {
+        height: 80%;
+        width: auto;
+    }
+
+    .shop-chairs img {
+        height: 80%;
+    }
+    .shop-chairs h1, .shop-sofas h1{
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .new-arrivals-main {
+        padding:200px 500px;
+    }
 }

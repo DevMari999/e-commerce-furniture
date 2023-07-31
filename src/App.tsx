@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import AllProducts from "./components/AllProducts/AllProducts";
 import {CartProvider} from "./context/CartContext";
 import Cart from "./components/Cart/Cart";
+import CheckoutForm from "./components/CheckOutForm/CheckOutForm";
 
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                     <Route path="/all-chairs" element={<AllProducts />} />
                     <Route path="/all-sofas" element={<AllProducts />} />
                     <Route path="/cart" element={<Cart/>} />
+                    <Route path="/checkout" element={<CheckoutForm/>} />
                 </Routes>
                 <Footer/>
             </div>

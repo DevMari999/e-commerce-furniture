@@ -31,12 +31,7 @@
     height: 100%;
 
 }
-.product-details-content sofa {
-    width: 27vh;
-}
-.product-details-content chair {
-    width: 30vh;
-}
+
 .product-details h3 {
     margin-top: 10px;
 }
@@ -86,4 +81,54 @@
 }
 .product-description span {
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        padding: 10px;
+    }
+    .button-div {
+        width: 100%;
+        height: fit-content;
+
+    }
+    .product-details-content {
+        flex-direction: column;
+
+    }
+    .chair2 img{
+        width: 80%;
+    }
+    .sofa2 img{
+        width: 100%;
+    }
+  .product-description {
+      margin: 0;
+      padding: 0;
+  }
+}
+
+@media (min-width: 768px)  and (max-width: 1279px){
+    .chair2 img{
+        width: 45%;
+        height: auto;
+    }
+    .sofa2 img{
+       height: 50%;
+        width: auto;
+    }
+
+}
+
+@media (min-width: 1280px)  and (max-width: 1439px) {
+}
+
+@media (min-width: 1800px) {
+    .button-div {
+        width: 50%;
+        height: 50vh;
+    }
+    .product-description {
+        width: 350px;
+    }
 }

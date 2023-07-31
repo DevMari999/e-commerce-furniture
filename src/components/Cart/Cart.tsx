@@ -2,6 +2,8 @@ import React from 'react';
 import { useCartContext } from '../../context/CartContext';
 import './Cart.css';
 import ProductCard from '../ProductCard/ProductCard';
+import {Link} from "react-router-dom";
+
 
 const Cart = () => {
     const {
@@ -69,7 +71,10 @@ const Cart = () => {
                         <button className="cart-button" onClick={handleClearCart}>
                             Clear Cart
                         </button>
-                        <button className="cart-button">Checkout</button>
+                        <Link to="/checkout">
+                            <button className="cart-button">Checkout</button>
+                        </Link>
+
                     </div>
                 </>
             )}

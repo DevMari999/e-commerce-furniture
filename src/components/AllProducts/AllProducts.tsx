@@ -42,14 +42,14 @@ const AllProducts = () => {
         <div className="all-products-main">
             <div className="color-filter">
                 <button  className="show-all" onClick={() => handleColorSelection(null)}>Show All</button>
-                <button onClick={() => handleColorSelection('beige')}><img src={beige}/></button>
-                <button onClick={() => handleColorSelection('blue')}><img src={blue}/></button>
-                <button onClick={() => handleColorSelection('green')}><img src={green}/></button>
-                <button onClick={() => handleColorSelection('black')}><img src={black}/></button>
-                <button onClick={() => handleColorSelection('grey')}><img src={grey}/></button>
-                <button onClick={() => handleColorSelection('pink')}><img src={pink}/></button>
-                <button onClick={() => handleColorSelection('purple')}><img src={purple}/></button>
-                <button onClick={() => handleColorSelection('peach')}><img src={peach}/></button>
+                <button onClick={() => handleColorSelection('beige')}><img src={beige} alt="beige"/></button>
+                <button onClick={() => handleColorSelection('blue')}><img src={blue} alt="blue"/></button>
+                <button onClick={() => handleColorSelection('green')}><img src={green} alt="green"/></button>
+                <button onClick={() => handleColorSelection('black')}><img src={black} alt="black"/></button>
+                <button onClick={() => handleColorSelection('grey')}><img src={grey} alt="grey"/></button>
+                <button onClick={() => handleColorSelection('pink')}><img src={pink} alt="pink"/></button>
+                <button onClick={() => handleColorSelection('purple')}><img src={purple} alt="purple"/></button>
+                <button onClick={() => handleColorSelection('peach')}><img src={peach} alt="peach"/></button>
 
             </div>
             <div>
