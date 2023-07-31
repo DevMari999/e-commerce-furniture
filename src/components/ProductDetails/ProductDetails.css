@@ -16,12 +16,11 @@
     background: #f8f7f7;
     box-shadow: 0 0 5px #dbd8d8;
     padding: 30px;
-    width: 80%;
+    width: 90%;
     height: 70vh;
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-end;*/
-    /*align-items: flex-end;*/
+
 }
 
 .product-details-content {
@@ -32,11 +31,12 @@
     height: 100%;
 
 }
-.product-details img {
-    max-height: 300px;
-
+.product-details-content sofa {
+    width: 27vh;
 }
-
+.product-details-content chair {
+    width: 30vh;
+}
 .product-details h3 {
     margin-top: 10px;
 }
@@ -59,16 +59,18 @@
 
 .product-description h3 {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .product-description h4 {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .product-description p {
-    line-height: 1.6;
+    font-size: 17px;
     text-align: justify;
-    width: 300px;
+
 }
 .close-button {
     display: flex;
@@ -82,4 +84,6 @@
     cursor: pointer;
     padding: 5px 10px;
 }
-
+.product-description span {
+    font-size: 18px;
+}

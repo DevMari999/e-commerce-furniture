@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
 
     return (
         <div className="main-productcard">
-            <div className="all-cards">
+            <div className=" all-cards">
                 {items.map((item) => (
                     <div
                         key={item.id}

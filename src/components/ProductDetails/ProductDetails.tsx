@@ -28,7 +28,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, onClose }) => 
                         Close X
                     </button>
                 </div>
-                <div className="product-details-content">
+                <div  className={`product-details-content ${product.type === 'sofa' ? 'sofa' : 'chair'}`}>
                     <img src={`${product.image}`} alt={product.name} />
                     <div className="product-description">
                         <h3>{product.name}</h3>
@@ -37,7 +37,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, onClose }) => 
                         <p>{product.description}</p>
                         <button className="cart-button" onClick={handleAddToCart}>Add to Cart</button>
                         {product.year === 2023 &&   <div className="card-logo">
-                            <img src={newlogo} alt="New" />
+                            <img src={newlogo} alt="New"/>
                         </div>}
                         {product.sale &&   <div className="card-logo">
                             <img src={salelogo} alt="New" />

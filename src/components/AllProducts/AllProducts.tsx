@@ -52,7 +52,9 @@ const AllProducts = () => {
                 <button onClick={() => handleColorSelection('peach')}><img src={peach}/></button>
 
             </div>
+            <div>
             <ProductCard items={filteredItems} />
+            </div>
         </div>
     );
 };

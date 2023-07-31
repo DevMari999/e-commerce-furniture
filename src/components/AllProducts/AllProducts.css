@@ -1,10 +1,17 @@
 .all-products-main {
-    padding: 100px 10px;
     min-height:calc(100vh - 360px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
 }
 
+.color-filter {
+    margin: 10px;
+}
 .color-filter button img {
-    height: 15px;
+    height: 17px;
 
 }
 
@@ -14,6 +21,10 @@
     cursor: pointer;
     margin: 10px;
     font-size: 18px;
+    transition: transform 0.2s ease;
+}
+.color-filter button:hover {
+    transform: scale(1.15);
 }
 
 .show-all {

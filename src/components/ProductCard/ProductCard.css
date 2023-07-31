@@ -6,9 +6,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-right: 100px;
-    padding-left: 100px;
+    width: 100%;
 }
+
 .product-card {
     margin: 10px;
     background: rgba(241, 241, 242, 0.31);
@@ -17,7 +17,6 @@
     align-items: center;
     flex-direction: column;
     box-shadow: 0 0 5px #e0dfdf;
-    flex: 0 0 calc(30% - 10px);
     transition: transform 0.2s ease;
     position: relative;
     padding: 20px;
@@ -34,11 +33,22 @@
 .product-card:hover {
     transform: scale(1.05);
 }
-
+.chair {
+    height: 50vh;
+    width: fit-content;
+}
+.sofa {
+    height:50vh;
+    width: fit-content;
+}
 .chair img{
-    height: 270px;
+    height:80%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .sofa img {
-    height: 250px;
+    height:70%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
