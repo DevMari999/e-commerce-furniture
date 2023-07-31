@@ -39,3 +39,8 @@
 .cart-button:hover {
    box-shadow: 0 0 5px #cecccc;
 }
+.quantity-button {
+    padding: 3px;
+    font-size: 16px;
+    margin: 5px;
+}

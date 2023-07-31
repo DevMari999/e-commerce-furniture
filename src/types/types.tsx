@@ -8,6 +8,7 @@ export interface Chair {
     description: string;
     sale: boolean;
     color: string;
+    quantity: number;
 }
 
 export interface Sofa {
@@ -19,4 +20,5 @@ export interface Sofa {
     description: string;
     sale: boolean;
     color: string;
+    quantity: number;
 }

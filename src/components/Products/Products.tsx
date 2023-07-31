@@ -2,8 +2,8 @@ import React from 'react';
 import { useChairsContext } from '../../context/ChairsContext'; // Import the context hook
 import ProductCard from '../ProductCard/ProductCard';
 import './Products.css';
-import shopsofa from '../../assets/3sofa.png'
-import shopchairs from '../../assets/7.png'
+import shopsofa from '../../assets/9sofa.png'
+import shopchairs from '../../assets/11.png'
 import {useSofasContext} from "../../context/SofasContext";
 import {Link} from "react-router-dom";
 
@@ -27,16 +27,16 @@ const Products: React.FC = () => {
             <Link to="/all-sofas" className="shop-link">
             <div className="shop-sofas-container">
                 <div className="shop-sofas">
-                    <img src={shopsofa}/>
                     <h1>SHOP ALL SOFAS</h1>
+                    <img src={shopsofa}/>
                 </div>
             </div>
             </Link>
             <Link to="/all-chairs" className="shop-link">
             <div className="shop-chairs-container">
                <div className="shop-chairs">
-                   <h1>SHOP ALL CHAIRS</h1>
                    <img src={shopchairs}/>
+                   <h1>SHOP ALL CHAIRS</h1>
                </div>
             </div>
             </Link>

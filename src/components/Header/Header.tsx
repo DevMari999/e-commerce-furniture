@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { useCartContext } from '../../context/CartContext';
+import cart from "../../assets/cart.png";
 
 const Header: React.FC = () => {
+    const { cartItems } = useCartContext();
+
+    const totalItemsInCart = cartItems.reduce((total, item) => total + item.quantity, 0);
+
     return (
         <header className="header">
             <nav className="container">
@@ -21,7 +27,11 @@ const Header: React.FC = () => {
                     </div>
                     <div className="divider"></div>
                     <div className="main-nav-item">
-                        <Link to="/cart">Cart</Link>
+                        <Link to="/cart">
+                            Cart
+                            <img className="cart-logo" src={cart}/>
+                            {totalItemsInCart > 0 && <span className="cart-item-count">{totalItemsInCart}</span>}
+                        </Link>
                     </div>
                 </div>
             </nav>
