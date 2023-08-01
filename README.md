@@ -3,12 +3,12 @@
 
 
 <b>Furniture Store E-Commerce Tech Stack:</b>
-
-Front-End: React, HTML, CSS, TypeScript
-IDE: WebStorm
-Package Manager: npm
-State Management: Context API
-Version Control: Git
+  
+       Front-End: React, HTML, CSS, TypeScript
+       IDE: WebStorm
+       Package Manager: npm
+       State Management: Context API
+       Version Control: Git
 
 <b>Description:</b>
 
