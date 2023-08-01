@@ -30,30 +30,6 @@
     font-size: 16px;
 }
 
-.alert {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f0f0f0;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-.success {
-    background-color: #a5d6a7;
-    color: #2e7d32;
-}
-
-.error {
-    background-color: #ef9a9a;
-    color: #c62828;
-}
 
 
 
