@@ -4,7 +4,7 @@ import './CheckOutForm.css';
 import { useCartContext } from '../../context/CartContext';
 
 const CheckoutForm = () => {
-    const { cartItems, clearCart } = useCartContext();
+    const { clearCart } = useCartContext();
 
     const [formData, setFormData] = useState<FormData>({
         name: '',
@@ -50,12 +50,9 @@ const CheckoutForm = () => {
             });
             setErrors({});
             setIsSubmitting(false);
-            setShowAlert(true);
+            setShowAlert(true); // Show the alert
+            clearCart(); // Clear the cart after successful submission
         }, 1000);
-    };
-
-    const handleClearCart = () => {
-        clearCart();
     };
 
     const handleAlertClose = () => {
@@ -65,54 +62,50 @@ const CheckoutForm = () => {
     return (
         <div className="checkout">
             <h2>Checkout</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="input-field">
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div className="input-field">
-                    <label htmlFor="phone">Phone:</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                    />
-                    {errors.phone && <p className="error-message">{errors.phone}</p>}
-                </div>
-                <div className="input-field">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    {errors.email && <p className="error-message">{errors.email}</p>}
-                </div>
-                <div className="checkout-button">
-                    <button
-                        className="cart-button"
-                        type="submit"
-                        onClick={handleClearCart}
-                        disabled={isSubmitting || cartItems.length === 0}
-                    >
-                        {isSubmitting ? 'Processing...' : 'Submit'}
-                    </button>
-                </div>
-            </form>
-            {showAlert && (
+            {!showAlert ? (
+                <form onSubmit={handleSubmit}>
+                    <div className="input-field">
+                        <label htmlFor="name">Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div className="input-field">
+                        <label htmlFor="phone">Phone:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            required
+                        />
+                        {errors.phone && <p className="error-message">{errors.phone}</p>}
+                    </div>
+                    <div className="input-field">
+                        <label htmlFor="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                        {errors.email && <p className="error-message">{errors.email}</p>}
+                    </div>
+                    <div className="checkout-button">
+                        <button className="cart-button" type="submit" disabled={isSubmitting}>
+                            {isSubmitting ? 'Processing...' : 'Submit'}
+                        </button>
+                    </div>
+                </form>
+            ) : (
                 <div className="alert success" onClick={handleAlertClose}>
                     Your order is successful, our manager will contact you soon! (Click to close)
                 </div>
