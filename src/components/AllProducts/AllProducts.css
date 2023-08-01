@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 70px;
 }
 
 .color-filter {
