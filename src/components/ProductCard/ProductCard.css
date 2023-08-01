@@ -21,6 +21,7 @@
     position: relative;
     padding: 30px;
     flex: 1;
+
 }
 .card-logo {
     position: absolute;
@@ -29,31 +30,22 @@
 }
 .card-logo img {
     height: 30px !important;
+    width: auto !important;
 }
 
 .product-card:hover {
     transform: scale(1.05);
 }
-.chair, .sofa{
-    height: 42vh;
-    min-height: fit-content;
-    width: fit-content;
-}
 
 .chair img, .sofa img{
    height: 32vh;
+
 }
 
 @media (max-width: 768px) {
     .all-cards {
           justify-content: center;
       }
-
-    .chair, .sofa {
-        min-height: fit-content;
-        height: 35vh;
-        width: 100%
-    }
 
     .chair img {
         height: 25vh;
@@ -70,7 +62,6 @@
     }
     .chair, .sofa {
         min-height: fit-content;
-        height: 35vh;
         width: fit-content;
     }
 
@@ -78,13 +69,13 @@
         height: 27vh;
     }
     .card-logo img {
-        height: 18px !important;
+        height: 22px !important;
+        width: auto !important;
     }
 }
 
 @media (min-width: 1280px)  and (max-width: 1439px){
     .chair, .sofa {
-        height: 40vh;
         width: fit-content;
         min-height: fit-content;
     }
@@ -93,13 +84,13 @@
     }
     .card-logo img {
         height: 25px !important;
+        width: auto !important;
     }
 
 }
 
 @media (min-width: 1800px) {
     .chair, .sofa {
-        height: 25vh;
         min-height: fit-content;
     }
 

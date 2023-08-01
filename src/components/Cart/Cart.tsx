@@ -72,7 +72,7 @@ const Cart = () => {
                             Clear Cart
                         </button>
                         <Link to="/checkout">
-                            <button className="cart-button">Checkout</button>
+                            <button className="cart-button ">Checkout</button>
                         </Link>
 
                     </div>

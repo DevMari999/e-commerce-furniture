@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { FormData } from "../../types/types";
 import './CheckOutForm.css';
+import { useCartContext } from '../../context/CartContext';
 
 const CheckoutForm = () => {
+    const { cartItems, clearCart } = useCartContext();
+
     const [formData, setFormData] = useState<FormData>({
         name: '',
         phone: '',
@@ -10,7 +13,8 @@ const CheckoutForm = () => {
     });
 
     const [errors, setErrors] = useState<Partial<FormData>>({});
-    const [isSubmitting, setIsSubmitting] = useState(false); // New state variable for submission status
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -36,12 +40,9 @@ const CheckoutForm = () => {
             return;
         }
 
-
         setIsSubmitting(true);
 
-
         setTimeout(() => {
-
             setFormData({
                 name: '',
                 phone: '',
@@ -49,9 +50,16 @@ const CheckoutForm = () => {
             });
             setErrors({});
             setIsSubmitting(false);
-            alert('Your order is successful, our manager will contact you soon!');
+            setShowAlert(true);
         }, 1000);
+    };
 
+    const handleClearCart = () => {
+        clearCart();
+    };
+
+    const handleAlertClose = () => {
+        setShowAlert(false);
     };
 
     return (
@@ -94,16 +102,23 @@ const CheckoutForm = () => {
                     {errors.email && <p className="error-message">{errors.email}</p>}
                 </div>
                 <div className="checkout-button">
-                    <button className="cart-button" type="submit" disabled={isSubmitting}>
-                        {isSubmitting ? 'Your order is processing...' : 'Submit'}
+                    <button
+                        className="cart-button"
+                        type="submit"
+                        onClick={handleClearCart}
+                        disabled={isSubmitting || cartItems.length === 0}
+                    >
+                        {isSubmitting ? 'Processing...' : 'Submit'}
                     </button>
                 </div>
             </form>
+            {showAlert && (
+                <div className="alert success" onClick={handleAlertClose}>
+                    Your order is successful, our manager will contact you soon! (Click to close)
+                </div>
+            )}
         </div>
     );
 };
 
 export default CheckoutForm;
-
-
-
