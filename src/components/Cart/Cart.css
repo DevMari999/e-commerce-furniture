@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px;
+    margin-top: 10px;
 }
 
 .cart-item {
@@ -32,7 +32,7 @@
     background: rgba(232, 232, 234, 0.36);
     cursor: pointer;
     border: solid #d5d4d4 1px;
-    margin: 20px;
+    margin: 10px 20px;
     color: #282a2d;
 
 }
