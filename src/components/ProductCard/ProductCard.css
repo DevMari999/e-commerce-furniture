@@ -19,8 +19,8 @@
     box-shadow: 0 0 5px #e0dfdf;
     transition: transform 0.2s ease;
     position: relative;
-    padding: 20px;
-    flex-basis: calc(30% - 10px);
+    padding: 30px;
+    flex: 1;
 }
 .card-logo {
     position: absolute;
@@ -34,78 +34,77 @@
 .product-card:hover {
     transform: scale(1.05);
 }
-.chair {
-    height: 43vh;
+.chair, .sofa{
+    height: 42vh;
+    min-height: fit-content;
     width: fit-content;
-}
-.sofa {
-    height:43vh;
-    width: fit-content;
-}
-.chair img{
-   height: 30vh;
 }
 
-.sofa img {
-   height: 30vh;
+.chair img, .sofa img{
+   height: 32vh;
 }
 
 @media (max-width: 768px) {
     .all-cards {
           justify-content: center;
       }
+
+    .chair, .sofa {
+        min-height: fit-content;
+        height: 35vh;
+        width: 100%
+    }
+
     .chair img {
-        height: 70%;
+        height: 25vh;
     }
-    .sofa img {
-        width: 90%;
-        height: auto;
-    }
-    .product-card {
-        width: 100%;
-    }
+      .sofa img {
+    height: 20vh;
+}
+
 }
 
 @media (min-width: 768px)  and (max-width: 1279px){
     .all-cards {
         justify-content: center;
     }
-    .chair {
-        height: 45vh;
+    .chair, .sofa {
+        min-height: fit-content;
+        height: 35vh;
         width: fit-content;
     }
-    .sofa {
-        height:43vh;
-        width: fit-content;
+
+    .chair img,  .sofa img {
+        height: 27vh;
+    }
+    .card-logo img {
+        height: 18px !important;
     }
 }
 
 @media (min-width: 1280px)  and (max-width: 1439px){
-    .chair {
+    .chair, .sofa {
         height: 40vh;
         width: fit-content;
+        min-height: fit-content;
     }
-    .sofa {
-        height:37vh;
-        width: fit-content;
+    .chair img, .sofa img{
+        height: 30vh;
     }
+    .card-logo img {
+        height: 25px !important;
+    }
+
 }
 
 @media (min-width: 1800px) {
-    .chair {
-        height: 29vh;
-
-    }
-    .sofa {
-        height:25vh;
-
-    }
-    .chair img{
+    .chair, .sofa {
         height: 25vh;
-
+        min-height: fit-content;
     }
-    .sofa img{
-        height:21vh;
 
+    .chair img, .sofa img{
+        height: 21vh;
     }
+
 }

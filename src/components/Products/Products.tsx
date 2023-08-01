@@ -24,22 +24,24 @@ const Products: React.FC = () => {
                 </div >
                 <ProductCard items={newArrivalChairs} />
             </div>
+            <div className="links-wrapper">
             <Link to="/all-sofas" className="shop-link">
             <div className="shop-sofas-container">
                 <div className="shop-sofas">
-                    <h1>SHOP ALL SOFAS</h1>
-                    <img src={shopsofa} alt="sofa"/>
+                    <div className="shop-all-header"><h1>SHOP ALL SOFAS</h1> </div>
+                   <div className="shop-all-image"> <img src={shopsofa} alt="sofa"/></div>
                 </div>
             </div>
             </Link>
             <Link to="/all-chairs" className="shop-link">
             <div className="shop-chairs-container">
                <div className="shop-chairs">
-                   <img src={shopchairs} alt="chair"/>
-                   <h1>SHOP ALL CHAIRS</h1>
+                   <div className="shop-all-image"><img src={shopchairs} alt="chair"/></div>
+                  <div className="shop-all-header"><h1>SHOP ALL CHAIRS</h1></div>
                </div>
             </div>
             </Link>
+            </div>
             <div className="new-arrival-container">
                 <div className="new-arrivals-header">
                     <h2 className="on-sale-header">ON SALE!</h2>

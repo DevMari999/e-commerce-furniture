@@ -41,7 +41,6 @@
             flex-direction: column;
         }
 
-
         .about-us-image img {
            width: 100%;
             height: auto;
@@ -49,13 +48,20 @@
         .our-story {
             padding:20px
         }
+        .our-story h2 {
+            font-size: 20px;
+        }
+
+        .our-story p {
+            font-size: 16px;
+        }
 
     }
 
 @media (min-width: 768px)  and (max-width: 1279px){
 
     .about-us-image img {
-        height: 30vh;
+        height: 40vh;
     }
     .our-story {
         padding: 30px;
@@ -63,6 +69,10 @@
     .about-us-content {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .our-story {
+        padding-left:70px;
+        padding-right:70px;
     }
 }
 

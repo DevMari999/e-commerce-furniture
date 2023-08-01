@@ -33,7 +33,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
                     >
                         <img src={item.image} alt={item.name} />
                         <h3>{item.name}</h3>
-                        <span>Price: ${item.price}</span>
+                        <span className={item.sale ? "on-sale" : ""}>
+  Price: {item.sale ? <><del>${item.price.toFixed(2)}</del> ${ (item.price * 0.8).toFixed(2) }</> : `$${item.price.toFixed(2)}`}
+</span>
                         {item.year >= 2023 && (
                             <div className="card-logo">
                                 <img src={newlogo} alt="New" />
