@@ -32,7 +32,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, onClose }) => 
                     <img src={`${product.image}`} alt={product.name} />
                     <div className="product-description">
                         <h3>{product.name}</h3>
-                        <span><b>Price:</b> ${product.price}</span>
+                        <span className={product.sale ? "on-sale" : ""}>
+  Price: {product.sale ? <><del>${product.price.toFixed(2)}</del> ${ (product.price * 0.8).toFixed(2) }</> : `$${product.price.toFixed(2)}`}
+</span>
                         <h4>Description:</h4>
                         <p>{product.description}</p>
                         <button className="cart-button" onClick={handleAddToCart}>Add to Cart</button>
