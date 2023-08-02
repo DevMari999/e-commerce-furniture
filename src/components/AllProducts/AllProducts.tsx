@@ -5,14 +5,14 @@ import { useSofasContext } from '../../context/SofasContext';
 import './AllProducts.css';
 import ProductCard from '../ProductCard/ProductCard';
 
-import beige from '../../assets/beige.png';
-import blue from '../../assets/blue.png';
-import grey from '../../assets/grey.png';
-import pink from '../../assets/pink.png';
-import purple from '../../assets/purple.png';
-import green from '../../assets/green.png';
-import black from '../../assets/black.png';
-import peach from '../../assets/peach.png';
+import beige from '../../assets/beige.jpeg';
+import blue from '../../assets/blue.jpeg';
+import grey from '../../assets/grey.jpeg';
+import pink from '../../assets/pink.jpeg';
+import purple from '../../assets/purple.jpeg';
+import green from '../../assets/green.jpeg';
+import black from '../../assets/black.jpeg';
+import peach from '../../assets/peach.jpeg';
 
 
 

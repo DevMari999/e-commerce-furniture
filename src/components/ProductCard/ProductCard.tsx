@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Chair, Sofa } from '../../types/types';
 import "./ProductCard.css";
-import newlogo from "../../assets/new.png";
-import salelogo from "../../assets/sale.png";
+import newlogo from "../../assets/new.jpeg";
+import salelogo from "../../assets/sale.jpeg";
 import ProductDetails from '../ProductDetails/ProductDetails';
 
 type ProductItem = Chair | Sofa;

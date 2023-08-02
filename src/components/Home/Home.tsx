@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Home.css";
-import background from "../../assets/background.png";
-import arrow from "../../assets/arrow.png";
+import background from "../../assets/background.jpeg";
+import arrow from "../../assets/arrow.jpeg";
 
 const Home = () => {
     return (

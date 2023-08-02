@@ -1,15 +1,15 @@
-import chair1 from "../assets/1.png";
-import chair2 from "../assets/2.png";
-import chair3 from "../assets/3.png";
-import chair4 from "../assets/4.png";
-import chair5 from "../assets/5.png";
-import chair6 from "../assets/6.png";
-import chair7 from "../assets/7.png";
-import chair8 from "../assets/8.png";
-import chair9 from "../assets/9.png";
-import chair10 from "../assets/10.png";
-import chair11 from "../assets/11.png";
-import chair12 from "../assets/12.png";
+import chair1 from "../assets/1.jpeg";
+import chair2 from "../assets/2.jpeg";
+import chair3 from "../assets/3.jpeg";
+import chair4 from "../assets/4.jpeg";
+import chair5 from "../assets/5.jpeg";
+import chair6 from "../assets/6.jpeg";
+import chair7 from "../assets/7.jpeg";
+import chair8 from "../assets/8.jpeg";
+import chair9 from "../assets/9.jpeg";
+import chair10 from "../assets/10.jpeg";
+import chair11 from "../assets/11.jpeg";
+import chair12 from "../assets/12.jpeg";
 
 
     const chairs = [

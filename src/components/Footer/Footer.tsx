@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import logo1 from "../../assets/logo1.png";
-import logo2 from "../../assets/logo2.png";
-import logo3 from "../../assets/logo3.png";
+import logo1 from "../../assets/logo1.jpeg";
+import logo2 from "../../assets/logo2.jpeg";
+import logo3 from "../../assets/logo3.jpeg";
 const Footer = () => {
     return (
         <div className="footer-main">

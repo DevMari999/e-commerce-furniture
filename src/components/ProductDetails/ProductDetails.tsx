@@ -2,8 +2,8 @@ import React from 'react';
 import { Chair, Sofa } from '../../types/types';
 import "./ProductDetails.css";
 import { useCartContext } from '../../context/CartContext';
-import newlogo from "../../assets/new.png";
-import salelogo from "../../assets/sale.png";
+import newlogo from "../../assets/new.jpeg";
+import salelogo from "../../assets/sale.jpeg";
 
 type ProductItem = Chair | Sofa;
 

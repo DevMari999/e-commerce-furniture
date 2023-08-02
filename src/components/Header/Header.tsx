@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { useCartContext } from '../../context/CartContext';
-import cart from "../../assets/cart.png";
+import cart from "../../assets/cart.jpeg";
 
 const Header: React.FC = () => {
     const { cartItems } = useCartContext();
