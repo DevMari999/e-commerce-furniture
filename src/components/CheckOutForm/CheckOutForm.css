@@ -1,10 +1,11 @@
 .checkout {
-    height: calc(100vh - 360px);
+    height: calc(100vh - 300px);
     min-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 150px;
 }
 
 .checkout-button {
@@ -31,6 +32,12 @@
     font-size: 16px;
 }
 
+.empty-cart-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
