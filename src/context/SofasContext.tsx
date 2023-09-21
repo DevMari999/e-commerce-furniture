@@ -1,5 +1,5 @@
-import React, { createContext, useContext } from 'react';
-import { Sofa } from '../types/types';
+import React, {createContext, useContext} from 'react';
+import {Sofa} from '../types/types';
 import sofasData from '../data/sofas';
 
 type SofasContextData = {
@@ -10,8 +10,8 @@ const SofasContext = createContext<SofasContextData>({
     sofas: sofasData,
 });
 
-const SofasProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    return <SofasContext.Provider value={{ sofas: sofasData }}>{children}</SofasContext.Provider>;
+const SofasProvider: React.FC<{ children: React.ReactNode }> = ({children}) => {
+    return <SofasContext.Provider value={{sofas: sofasData}}>{children}</SofasContext.Provider>;
 };
 
 const useSofasContext = () => {
@@ -22,4 +22,4 @@ const useSofasContext = () => {
     return context;
 };
 
-export { SofasProvider, useSofasContext };
+export {SofasProvider, useSofasContext};

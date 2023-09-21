@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from "./components/Header/Header";
 import "./App.css";
 import MainPage from "./components/MainPage/MainPage";
@@ -14,17 +14,17 @@ const App: React.FC = () => {
     return (
         <Router>
             <CartProvider>
-            <div>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<MainPage />} />
-                    <Route path="/all-chairs" element={<AllProducts />} />
-                    <Route path="/all-sofas" element={<AllProducts />} />
-                    <Route path="/cart" element={<Cart/>} />
-                    <Route path="/checkout" element={<CheckoutForm/>} />
-                </Routes>
-                <Footer/>
-            </div>
+                <div>
+                    <Header/>
+                    <Routes>
+                        <Route path="/" element={<MainPage/>}/>
+                        <Route path="/all-chairs" element={<AllProducts/>}/>
+                        <Route path="/all-sofas" element={<AllProducts/>}/>
+                        <Route path="/cart" element={<Cart/>}/>
+                        <Route path="/checkout" element={<CheckoutForm/>}/>
+                    </Routes>
+                    <Footer/>
+                </div>
             </CartProvider>
         </Router>
     );

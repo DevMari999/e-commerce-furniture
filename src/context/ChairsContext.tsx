@@ -1,5 +1,5 @@
-import React, { createContext, useContext } from 'react';
-import { Chair } from '../types/types';
+import React, {createContext, useContext} from 'react';
+import {Chair} from '../types/types';
 import chairsData from '../data/chairs';
 
 type ChairsContextData = {
@@ -10,8 +10,8 @@ const ChairsContext = createContext<ChairsContextData>({
     chairs: chairsData,
 });
 
-const ChairsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    return <ChairsContext.Provider value={{ chairs: chairsData }}>{children}</ChairsContext.Provider>;
+const ChairsProvider: React.FC<{ children: React.ReactNode }> = ({children}) => {
+    return <ChairsContext.Provider value={{chairs: chairsData}}>{children}</ChairsContext.Provider>;
 };
 
 const useChairsContext = () => {
@@ -22,5 +22,5 @@ const useChairsContext = () => {
     return context;
 };
 
-export { ChairsProvider, useChairsContext };
+export {ChairsProvider, useChairsContext};
 

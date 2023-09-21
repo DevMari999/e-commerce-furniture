@@ -1,6 +1,7 @@
 .main-productcard {
- width:100%
+    width: 100%
 }
+
 .all-cards {
     display: flex;
     justify-content: space-between;
@@ -21,13 +22,15 @@
     position: relative;
     padding: 30px;
     flex: 1;
-
+    cursor: pointer;
 }
+
 .card-logo {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
+
 .card-logo img {
     height: 30px !important;
     width: auto !important;
@@ -37,51 +40,55 @@
     transform: scale(1.05);
 }
 
-.chair img, .sofa img{
-   height: 32vh;
-
+.chair img, .sofa img {
+    height: 30vh;
 }
 
 @media (max-width: 768px) {
     .all-cards {
-          justify-content: center;
-      }
+        justify-content: center;
+    }
 
     .chair img {
         height: 25vh;
     }
-      .sofa img {
-    height: 20vh;
-}
+
+    .sofa img {
+        height: 20vh;
+    }
 
 }
 
-@media (min-width: 768px)  and (max-width: 1279px){
+@media (min-width: 768px)  and (max-width: 1279px) {
     .all-cards {
         justify-content: center;
     }
+
     .chair, .sofa {
         min-height: fit-content;
         width: fit-content;
     }
 
-    .chair img,  .sofa img {
+    .chair img, .sofa img {
         height: 27vh;
     }
+
     .card-logo img {
         height: 22px !important;
         width: auto !important;
     }
 }
 
-@media (min-width: 1280px)  and (max-width: 1439px){
+@media (min-width: 1280px)  and (max-width: 1439px) {
     .chair, .sofa {
         width: fit-content;
         min-height: fit-content;
     }
-    .chair img, .sofa img{
+
+    .chair img, .sofa img {
         height: 30vh;
     }
+
     .card-logo img {
         height: 25px !important;
         width: auto !important;
@@ -94,7 +101,7 @@
         min-height: fit-content;
     }
 
-    .chair img, .sofa img{
+    .chair img, .sofa img {
         height: 21vh;
     }
 

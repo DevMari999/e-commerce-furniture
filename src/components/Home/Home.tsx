@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Home.css";
-import background from "../../assets/background.jpeg";
-import arrow from "../../assets/arrow.jpeg";
+import background from "../../assets/homepage.webp";
+import arrow from "../../assets/logos/arrow.webp";
 
 const Home = () => {
     return (
-        <div className="main-home">
+        <section id="home" className="main-home">
             <div className="background-home">
                 <img src={background} alt="background"/>
             </div>
@@ -16,13 +16,11 @@ const Home = () => {
             <div>
                 <a href="/#new-arrivals">
                     <button className="arrow">
-                        <img src={arrow} alt="Navigate to New Arrivals" />
+                        <img src={arrow} alt="Navigate to New Arrivals"/>
                     </button>
                 </a>
             </div>
-
-
-        </div>
+        </section>
     );
 };
 

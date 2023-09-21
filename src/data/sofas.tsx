@@ -1,16 +1,15 @@
-import sofa1 from "../assets/sofa1.jpeg";
-import sofa2 from "../assets/sofa2.jpeg";
-import sofa3 from "../assets/sofa3.jpeg";
-import sofa4 from "../assets/sofa4.jpeg";
-import sofa5 from "../assets/sofa5.jpeg";
-import sofa6 from "../assets/sofa6.jpeg";
-import sofa7 from "../assets/sofa7.jpeg";
-import sofa8 from "../assets/sofa8.jpeg";
-import sofa9 from "../assets/sofa9.jpeg";
-import sofa10 from "../assets/sofa10.jpeg";
-import sofa11 from "../assets/sofa11.jpeg";
-import sofa12 from "../assets/sofa12.jpeg";
-
+import sofa1 from "../assets/sofas/sofa1.webp";
+import sofa2 from "../assets/sofas/sofa2.webp";
+import sofa3 from "../assets/sofas/sofa3.webp";
+import sofa4 from "../assets/sofas/sofa4.webp";
+import sofa5 from "../assets/sofas/sofa5.webp";
+import sofa6 from "../assets/sofas/sofa6.webp";
+import sofa7 from "../assets/sofas/sofa7.webp";
+import sofa8 from "../assets/sofas/sofa8.webp";
+import sofa9 from "../assets/sofas/sofa9.webp";
+import sofa10 from "../assets/sofas/sofa10.webp";
+import sofa11 from "../assets/sofas/sofa11.webp";
+import sofa12 from "../assets/sofas/sofa12.webp";
 
 
 const sofas = [
@@ -21,7 +20,7 @@ const sofas = [
         price: 1300,
         year: 2019,
         sale: false,
-        color:"grey",
+        color: "gray",
         quantity: 0,
         type: 'sofa',
         description: " Sink into comfort with our LuxeLounger sofa, featuring plush cushions and a sleek design that adds a touch of luxury to any living space.",
@@ -33,7 +32,7 @@ const sofas = [
         price: 1450,
         year: 2020,
         sale: false,
-        color:"beige",
+        color: "beige",
         quantity: 0,
         type: 'sofa',
         description: "Experience the ultimate coziness with our CozyHaven sofa, designed with soft, fluffy cushions that make it the perfect spot for relaxation and unwinding."
@@ -45,7 +44,7 @@ const sofas = [
         price: 1200,
         year: 2020,
         sale: true,
-        color:"blue",
+        color: "blue",
         quantity: 0,
         type: 'sofa',
         description: "Elevate your decor with our ModernChic sofa, boasting clean lines and contemporary elegance that brings a stylish edge to your home."
@@ -57,7 +56,7 @@ const sofas = [
         price: 1800,
         year: 2020,
         sale: false,
-        color:"pink",
+        color: "pink",
         quantity: 0,
         type: 'sofa',
         description: "Embrace timeless comfort with our ClassicComfort sofa, crafted with traditional design and supportive cushions for a truly inviting feel."
@@ -69,7 +68,7 @@ const sofas = [
         price: 1700,
         year: 2018,
         sale: false,
-        color:"green",
+        color: "green",
         quantity: 0,
         type: 'sofa',
         description: "Transform your living room into an urban retreat with our UrbanRetreat sofa, blending modern aesthetics and functionality for urban living."
@@ -81,7 +80,7 @@ const sofas = [
         price: 1720,
         year: 2021,
         sale: false,
-        color:"peach",
+        color: "peach",
         quantity: 0,
         type: 'sofa',
         description: "Connect with nature with our Nature'sEmbrace sofa, made from eco-friendly materials and featuring earthy tones to bring the outdoors in."
@@ -93,7 +92,7 @@ const sofas = [
         price: 1850,
         year: 2019,
         sale: true,
-        color: "grey",
+        color: "gray",
         quantity: 0,
         type: 'sofa',
         description:

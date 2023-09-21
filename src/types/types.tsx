@@ -1,4 +1,3 @@
-
 export interface Chair {
     id: number;
     name: string;
@@ -24,6 +23,7 @@ export interface Sofa {
     quantity: number;
     type: string;
 }
+
 export interface FormData {
     name: string;
     phone: string;

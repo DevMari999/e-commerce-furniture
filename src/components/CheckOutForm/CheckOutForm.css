@@ -6,11 +6,13 @@
     align-items: center;
     flex-direction: column;
 }
+
 .checkout-button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .input-field {
     display: flex;
     justify-content: flex-start;
@@ -18,7 +20,6 @@
     flex-direction: column;
     margin: 15px;
     font-size: 18px;
-
 }
 
 .input-field input {

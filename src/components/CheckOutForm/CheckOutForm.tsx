@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { FormData } from "../../types/types";
+import React, {useState} from 'react';
+import {FormData} from "../../types/types";
 import './CheckOutForm.css';
-import { useCartContext } from '../../context/CartContext';
+import {useCartContext} from '../../context/CartContext';
 
 const CheckoutForm = () => {
-    const { cartItems, clearCart } = useCartContext();
+    const {cartItems, clearCart} = useCartContext();
 
     const [formData, setFormData] = useState<FormData>({
         name: '',
@@ -17,8 +17,8 @@ const CheckoutForm = () => {
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = e.target;
-        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+        const {name, value} = e.target;
+        setFormData((prevFormData) => ({...prevFormData, [name]: value}));
     };
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

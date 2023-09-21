@@ -1,62 +1,62 @@
 .footer-main {
-  height: 300px;
-  box-shadow: 0 0 5px #e0dfdf;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-
+    height: 300px;
+    box-shadow: 0 0 5px #e0dfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .info-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
- flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
 }
+
 .get-in-touch, .adress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 16px;
-  margin: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 70px;
 }
 
 .adress h4 {
-  margin: 5px;
+    margin: 5px;
 }
-
 
 .get-in-touch h2 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-.footer {
-  background: rgba(241, 241, 242, 0.31);
-  box-shadow: 0 0 5px #e0dfdf;
-  height: 50px;
-  width: 100%;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
 
+.footer {
+    background: rgba(241, 241, 242, 0.31);
+    box-shadow: 0 0 5px #e0dfdf;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
 }
 
 .sm-logo img {
-  height: 30px;
-  margin: 10px;
+    height: 30px;
+    margin: 10px;
 }
 
 
 @media (max-width: 768px) {
-  .get-in-touch, .adress {
-    font-size: 12px;
-    margin: 70px 10px 10px;
-  }
-  .sm-logo img {
-    height: 20px;
-    margin: 5px;
-  }
+    .get-in-touch, .adress {
+        font-size: 12px;
+        margin: 70px 10px 10px;
+    }
+
+    .sm-logo img {
+        height: 20px;
+        margin: 5px;
+    }
 }

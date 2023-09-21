@@ -1,18 +1,18 @@
 .all-products-main {
-    min-height:calc(100vh - 360px);
+    min-height: calc(100vh - 360px);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     padding: 100px 70px;
 }
-npm
+
 .color-filter {
     margin: 10px;
 }
+
 .color-filter button img {
     height: 17px;
-
 }
 
 .color-filter button {
@@ -23,12 +23,13 @@ npm
     font-size: 18px;
     transition: transform 0.2s ease;
 }
+
 .color-filter button:hover {
     transform: scale(1.15);
 }
 
 .show-all {
-    margin-right: 50px ;
+    margin-right: 50px;
 }
 
 @media (max-width: 768px) {

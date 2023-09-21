@@ -1,9 +1,8 @@
 import React from 'react';
-import { useCartContext } from '../../context/CartContext';
+import {useCartContext} from '../../context/CartContext';
 import './Cart.css';
 import ProductCard from '../ProductCard/ProductCard';
 import {Link} from "react-router-dom";
-
 
 const Cart = () => {
     const {
@@ -44,7 +43,7 @@ const Cart = () => {
                     <div className="all-cart-items">
                         {cartItems.map((item) => (
                             <div key={item.id} className="cart-item">
-                                <ProductCard items={[item]} />
+                                <ProductCard items={[item]}/>
                                 <div className="quantity-buttons">
                                     <button
                                         className="quantity-button"

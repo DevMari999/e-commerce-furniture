@@ -24,17 +24,14 @@
     justify-content: center;
     align-items: center;
     min-height: fit-content;
-
 }
 
 .product-details-content {
-  display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100%;
-
-
 }
 
 .product-details h3 {
@@ -71,14 +68,15 @@
 .product-description p {
     font-size: 17px;
     text-align: justify;
-
 }
+
 .close-button {
     display: flex;
     justify-content: flex-end;
     margin-left: 96%;
     margin-top: 30px;
 }
+
 .close-button button {
     background: none;
     border: none;
@@ -87,15 +85,17 @@
     cursor: pointer;
     padding: 5px 10px;
 }
+
 .product-description span {
     font-size: 18px;
 }
 
-.chair2 img{
+.chair2 img {
     width: 45vh;
     height: auto;
 }
-.sofa2 img{
+
+.sofa2 img {
     height: 35vh;
     width: auto;
 }
@@ -104,29 +104,34 @@
     .product-details {
         padding: 10px;
     }
+
     .button-div {
         width: 100%;
         height: fit-content;
         padding: 0;
 
     }
+
     .product-details-content {
         flex-direction: column;
 
     }
 
-  .product-description {
-      margin: 0;
-      padding: 0;
-  }
+    .product-description {
+        margin: 0;
+        padding: 0;
+    }
+
     .close-button {
         margin-left: 75%;
     }
-    .chair2 img{
+
+    .chair2 img {
         width: 35vh;
         height: auto;
     }
-    .sofa2 img{
+
+    .sofa2 img {
         height: 23vh;
         width: auto;
     }

@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState } from 'react';
-import { Chair, Sofa } from '../types/types';
+import React, {createContext, useContext, useState} from 'react';
+import {Chair, Sofa} from '../types/types';
 
 export type CartItem = Chair | Sofa;
 
@@ -26,7 +26,7 @@ type CartProviderProps = {
     children: React.ReactNode;
 };
 
-const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+const CartProvider: React.FC<CartProviderProps> = ({children}) => {
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
     const addToCart = (item: CartItem) => {
@@ -35,10 +35,10 @@ const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
 
             if (existingItem) {
                 return prevItems.map((cartItem) =>
-                    cartItem.id === item.id ? { ...cartItem, quantity: (cartItem.quantity || 1) + 1 } : cartItem
+                    cartItem.id === item.id ? {...cartItem, quantity: (cartItem.quantity || 1) + 1} : cartItem
                 );
             } else {
-                return [...prevItems, { ...item, quantity: 1 }];
+                return [...prevItems, {...item, quantity: 1}];
             }
         });
     };
@@ -50,7 +50,7 @@ const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     const increaseQuantity = (itemId: number) => {
         setCartItems((prevItems) =>
             prevItems.map((item) =>
-                item.id === itemId ? { ...item, quantity: (item.quantity || 1) + 1 } : item
+                item.id === itemId ? {...item, quantity: (item.quantity || 1) + 1} : item
             )
         );
     };
@@ -58,7 +58,7 @@ const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     const decreaseQuantity = (itemId: number) => {
         setCartItems((prevItems) =>
             prevItems.map((item) =>
-                item.id === itemId ? { ...item, quantity: Math.max(1, (item.quantity || 1) - 1) } : item
+                item.id === itemId ? {...item, quantity: Math.max(1, (item.quantity || 1) - 1)} : item
             )
         );
     };
@@ -83,7 +83,7 @@ const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     );
 };
 
-export { CartProvider, CartContext };
+export {CartProvider, CartContext};
 
 
 

@@ -1,12 +1,13 @@
 .new-arrivals-main {
     margin-top: 50px;
-    padding:100px 70px;
-
+    padding: 100px 70px;
 }
+
 .shop-link {
     text-decoration: none;
     color: #282a2d;
 }
+
 .new-arrival-container {
     margin-bottom: 70px;
 }
@@ -17,6 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.on-sale-header {
+    font-size:25px;
 }
 
 .shop-sofas:hover {
@@ -38,30 +42,31 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 40vh;
+    height: 35vh;
 }
 
-.shop-chairs h1, .shop-sofas h1{
+.shop-chairs h1, .shop-sofas h1 {
     margin-right: 100px;
     margin-left: 100px;
     font-size: 27px;
 }
 
-.shop-sofas img, .shop-chairs img{
-    height: 35vh;
+.shop-sofas img, .shop-chairs img {
+    height: 30vh;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 @media (max-width: 768px) {
 
-   .new-arrivals-main {
-       padding:100px 10px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-   }
+    .new-arrivals-main {
+        padding: 100px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .links-wrapper {
         width: 100%;
 
@@ -73,29 +78,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .shop-sofas img {
-      width: 40vh;
+        width: 40vh;
         height: auto;
         margin: 5px;
     }
 
     .shop-chairs img {
-      height: 25vh;
+        height: 25vh;
         margin: 5px;
     }
-    .shop-chairs h1, .shop-sofas h1{
+
+    .shop-chairs h1, .shop-sofas h1 {
         margin: 0;
         font-size: 20px;
     }
 
 }
 
-@media (min-width: 768px)  and (max-width: 1279px){
+@media (min-width: 768px)  and (max-width: 1279px) {
     .new-arrivals-main {
-        padding:100px 70px;
+        padding: 100px 70px;
     }
 
     .shop-sofas img {
@@ -106,7 +111,8 @@
     .shop-chairs img {
         height: 32vh;
     }
-    .shop-chairs h1, .shop-sofas h1{
+
+    .shop-chairs h1, .shop-sofas h1 {
         margin: 0;
         font-size: 20px;
     }
@@ -114,15 +120,17 @@
 
 @media (min-width: 1800px) {
     .new-arrivals-main {
-        padding:200px 500px;
+        padding: 200px 500px;
     }
 
     .shop-chairs, .shop-sofas {
         height: 35vh;
     }
+
     .shop-chairs img {
         height: 27vh;
     }
+
     .shop-sofas img {
         width: 45vh;
         height: auto;
