@@ -41,7 +41,7 @@
 }
 
 .chair img, .sofa img {
-    height: 30vh;
+    height: 33vh;
 }
 
 @media (max-width: 768px) {
