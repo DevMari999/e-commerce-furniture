@@ -1,6 +1,5 @@
 
-![Screenshot 2023-08-01 at 04 43 27](https://github.com/DevMari999/e-commerce-furniture/assets/135366781/0d38e501-8abe-4a5b-8b80-6acc9f01bbe4)
-
+![furniture-screenshot-1](https://github.com/DevMari999/e-commerce-furniture/assets/135366781/584fe826-637a-4c91-83bb-d8efcc07b7bf)
 
 
 <b>Furniture Store E-Commerce Tech Stack:</b>
